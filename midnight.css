@@ -74,8 +74,8 @@
 
 /* change fonts (edit the variables above, not this part) */
 :root {
-	--font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-primary: var(--font), 'Hack Nerd Font Mono', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-display: var(--font), 'Hack Nerd Font Mono', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* reduced motion */
