@@ -1,11 +1,11 @@
 /**
- * @name midnight (nord)
- * @description A dark, rounded discord theme. Based on nord theme (https://github.com/nordtheme/nord).
- * @author refact0r, anubis
+ * @name midnight (spotify)
+ * @description A dark, rounded discord theme. Based on spotify's color palette.
+ * @author refact0r, remco0o
  * @version 1.6.2
  * @invite nz87hXyvcy
  * @website https://github.com/refact0r/midnight-discord
- * @source https://github.com/refact0r/midnight-discord/blob/master/flavors/midnight-nord.theme.css
+ * @source https://github.com/refact0r/midnight-discord/blob/master/flavors/midnight-spotify.theme.css
  * @authorId 508863359777505290
  * @authorLink https://www.refact0r.dev
 */
@@ -20,39 +20,42 @@
 	--font: 'figtree';
 
 	/* top left corner text */
-	--corner-text: 'Nord';
+	--corner-text: 'Spotify';
+
+	/* thickness of messages divider */
+	--divider-thickness: 3px;
 
 	/* color of status indicators and window controls */
-	--online-indicator: #a3be8c; /* change to #23a55a for default green */
-	--dnd-indicator: #bf616a; /* change to #f13f43 for default red */
-	--idle-indicator: #ebcb8b; /* change to #f0b232 for default yellow */
-	--streaming-indicator: #b48ead; /* change to #593695 for default purple */
+	--online-indicator: hsl(141, 76%, 52%); /* change to #23a55a for default green */
+	--dnd-indicator: hsl(0, 76%, 52%); /* change to #f23f43 for default red */
+	--idle-indicator: hsl(40, 76%, 52%); /* change to #f0b232 for default yellow */
+	--streaming-indicator: hsl(260, 76%, 56%); /* change to #593695 for default purple */
 
 	/* accent colors */
-	--accent-1: hsl(179, 25%, 65%); /* links */
-	--accent-2: hsl(193, 43%, 67%); /* general unread/mention elements */
-	--accent-3: hsl(193, 43%, 67%); /* accent buttons */
-	--accent-4: hsl(193, 37%, 60%); /* accent buttons when hovered */
-	--accent-5: hsl(193, 31%, 53%); /* accent buttons when clicked */
-	--mention: hsla(193, 43%, 51%, 0.1); /* mentions & mention messages */
-	--mention-hover: hsla(193, 43%, 51%, 0.05); /* mentions & mention messages when hovered */
+	--accent-1: hsl(141, 80%, 70%); /* links */
+	--accent-2: hsl(141, 76%, 52%); /* general unread/mention elements */
+	--accent-3: hsl(141, 76%, 48%); /* accent buttons */
+	--accent-4: hsl(141, 71%, 41%); /* accent buttons when hovered */
+	--accent-5: hsl(141, 64%, 34%); /* accent buttons when clicked */
+	--mention: hsla(141, 76%, 52%, 0.06); /* mentions & mention messages */
+	--mention-hover: hsla(141, 76%, 52%, 0.03); /* mentions & mention messages when hovered */
 
 	/* text colors */
-	--text-0: #2e3440; /* text on colored elements */
-	--text-1: #eceff4; /* other normally white text */
-	--text-2: #e5e9f0; /* headings and important text */
-	--text-3: #eceff4; /* normal text */
-	--text-4: #93a4c2; /* icon buttons and channels */
-	--text-5: #434c5e; /* muted channels/chats and timestamps */
+	--text-0: #121212; /* text on colored elements */
+	--text-1: #ffffff; /* other normally white text */
+	--text-2: #ffffff; /* headings and important text */
+	--text-3: #b3b3b3; /* normal text */
+	--text-4: #797979; /* icon buttons and channels */
+	--text-5: #3f3f3f; /* muted channels/chats and timestamps */
 
 	/* background and dark colors */
-	--bg-1: #434c5e; /* dark buttons when clicked */
-	--bg-2: #3b4252; /* dark buttons */
-	--bg-3: #2e3440; /* spacing, secondary elements */
-	--bg-4: #272b35; /* main background color */
-	--hover: hsla(220, 17%, 32%, 0.3); /* buttons when hovered */
-	--active: hsla(220, 17%, 32%, 0.5); /* channels and buttons when clicked or selected */
-	--message-hover: hsla(0, 0%, 0%, 0.1); /* messages when hovered */
+	--bg-1: #333333; /* dark buttons when clicked */
+	--bg-2: #242424; /* dark buttons */
+	--bg-3: #000000; /* spacing, secondary elements */
+	--bg-4: #121212; /* main background color */
+	--hover: #1a1a1a; /* buttons when hovered */
+	--active: #232323; /* channels and buttons when clicked or selected */
+	--message-hover: #0d0d0d; /* messages when hovered */
 
 	/* amount of spacing and padding */
 	--spacing: 12px;
@@ -84,4 +87,9 @@
 	--login-bg-filter: none; /* login background artwork */
 	--green-to-accent-3-filter: none; /* add friend page explore icon */
 	--blurple-to-accent-3-filter: none; /* add friend page school icon */
+
+	/* choose style for window control buttons (minimize-maximize-close) */
+	/* block to show, none to hide; choose only one to show!*/
+	--windows-nav: none; /* default windows-style buttons */
+	--custom-nav: block; /* custom mac-style buttons */
 }
