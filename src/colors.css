@@ -304,7 +304,7 @@
         --scrollbar-thin-track: transparent;
 
         --white: var(--text-0);
-        --white-500: var(--text-0);
+        --white-500: var(--text-1);
         --redesign-button-overlay-alpha-text: var(--text-2);
 
         --brand-360: var(--accent-2);
@@ -570,7 +570,7 @@
             fill: var(--text-0) !important;
         }
 
-        .refreshIcon__1bda4 /* settings radiobutton center */ {
+        .refreshIcon__88a69 /* settings radiobutton center */ {
             fill: var(--text-0);
         }
 
@@ -617,7 +617,7 @@
         .colorable_f1ceac.primaryDark_f1ceac /* vc icon button nub */,
         .iconBadge__650eb.base__2b1f5 /* server vc badge */,
         #app-mount .akaBadge__488b1 /* aka badge */,
-        .message_fcf29c /* you have unsaved settings message */,
+        .message__9a9f9 /* you have unsaved settings message */,
         .friendRequestsButton__523aa .base__2b1f5 /* inbox friend request number */,
         .textBadge__2b1f5[style='background-color: var(--background-accent);'],
         .tooltipBlack__382e7 /* server boost tooltip */,
@@ -767,13 +767,13 @@
         }
 
         /* fix radio bar button colors */
-        .radioBar__1bda4[style='--radio-bar-accent-color: var(--yellow-360); padding: 10px;'] {
+        .radioBar__88a69[style='--radio-bar-accent-color: var(--yellow-360); padding: 10px;'] {
             --radio-bar-accent-color: var(--yellow-2) !important;
         }
-        .radioBar__1bda4[style='--radio-bar-accent-color: var(--green-360); padding: 10px;'] {
+        .radioBar__88a69[style='--radio-bar-accent-color: var(--green-360); padding: 10px;'] {
             --radio-bar-accent-color: var(--green-2) !important;
         }
-        .radioBar__1bda4[style='--radio-bar-accent-color: var(--red-400); padding: 10px;'] {
+        .radioBar__88a69[style='--radio-bar-accent-color: var(--red-400); padding: 10px;'] {
             --radio-bar-accent-color: var(--red-2) !important;
         }
 

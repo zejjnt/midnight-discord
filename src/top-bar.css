@@ -114,6 +114,7 @@ body {
             gap: var(--space-xs);
             z-index: 1000;
             padding-right: var(--space-xs);
+            height: 32px;
         }
         .systemBar_c38106 .trailing_c38106 {
             top: var(--space-xs);
@@ -156,16 +157,16 @@ body {
             min-height: 0;
         }
     }
-    .base_c48ade:has(.notice__6e2b9) > .bar_c38106 > .trailing_c38106 {
+    .base__5e434:has(.notice__6e2b9) > .bar_c38106 > .trailing_c38106 {
         top: calc(var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness));
     }
-    .base_c48ade:has(.winButtons_c38106) {
+    .base__5e434:has(.winButtons_c38106) {
         --top-bar-right-margin: calc(32px + 3 * var(--space-xs) + 6 * var(--window-control-size));
     }
-    .base_c48ade:has(.trailing_c38106 > .button__85643) {
+    .base__5e434:has(.trailing_c38106 > .button__85643) {
         --top-bar-right-margin: calc(32px * 2 + 2 * var(--space-xs));
     }
-    .base_c48ade:has(.winButtons_c38106):has(.trailing_c38106 > .button__85643) {
+    .base__5e434:has(.winButtons_c38106):has(.trailing_c38106 > .button__85643) {
         --top-bar-right-margin: calc(32px * 2 + 4 * var(--space-xs) + 6 * var(--window-control-size));
     }
 }
