@@ -311,8 +311,8 @@ body {
     }
 
     /* remove excess backgrounds */
-    ._4106ae7c1472c1de-wrapper /* message loading placeholders */,
-    ._4106ae7c1472c1de-wrapper > .fc817765600a960a-wrapper {
+    .cdf8a9a2bbd98bd3-wrapper /* message loading placeholders */,
+    .cdf8a9a2bbd98bd3-wrapper > .fc817765600a960a-wrapper {
         background: none;
     }
     ._5e434347c823b592-page > .f75fb00fb7356cbe-chat /* friend page, server members page */ {
@@ -1885,4 +1885,3 @@ body {
         }
     }
 }
-
