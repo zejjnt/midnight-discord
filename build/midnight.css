@@ -442,9 +442,17 @@ body {
 ._24502a4069848acb-root {
     background: none;
 }
+
+._37e49614b9f110a9-container {
+    margin-inline-start: 0;
+    -webkit-margin-start: 0;
+}
 ._37e49614b9f110a9-container ._4bbc6dc06e75ad52-container /* nameplate */ {
-    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    border-radius: var(--radius-lg);
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 /* remove unnecessary backgrounds */
@@ -507,6 +515,12 @@ body {
     }
     ._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-unread {
         margin-left: 4px;
+    }
+    ._2ea32c412048f708-typeThread ._2ea32c412048f708-unread {
+        margin-left: -8px;
+    }
+    ._2ea32c412048f708-wrapper._2ea32c412048f708-typeThread:hover ._2ea32c412048f708-unread {
+        margin-left: 0px;
     }
 }
 
@@ -760,7 +774,7 @@ body {
         --badge-expressive-background-default: magenta;
         --badge-expressive-text-default: red;
         --badge-text-default: var(--text-0);
-        --bg-surface-overlay-tmp: lime;
+        --bg-surface-overlay-tmp: var(--bg-3);
         --bg-surface-raised: blue;
         --border-feedback-critical: magenta;
         --border-focus: red;
@@ -771,7 +785,7 @@ body {
         --button-danger-background-disabled: lime;
         --button-outline-brand-background-hover: blue;
         --button-outline-brand-border-active: magenta;
-        --button-outline-primary-text: red;
+        --button-outline-primary-text: var(--text-1);
         --card-background-default: var(--bg-3);
         --card-primary-pressed-bg: lime;
         --card-secondary-bg: blue;
@@ -847,7 +861,7 @@ body {
         --content-inventory-overlay-text-primary: var(--text-2);
         --content-inventory-overlay-text-secondary: var(--text-3);
         --context-menu-backdrop-background: red;
-        --control-brand-foreground: yellow;
+        --control-brand-foreground: var(--accent-2);
         --control-brand-foreground-new: lime;
         --control-connect-background-active: var(--accent-5);
         --control-connect-background-default: var(--accent-4);
@@ -1770,7 +1784,8 @@ body {
 @container body style(--top-bar-button-position: titlebar) {
     #app-mount {
         --custom-channel-header-height: calc(var(--guildbar-avatar-size) + var(--space-xs) + var(--border-thickness) * 2);
-        --top-bar-right-margin: calc(32px + var(--space-xs));
+        /* --top-bar-right-margin: calc(32px + var(--space-xs)); */
+        --top-bar-right-margin: calc(32px * 2 + 2 * var(--space-xs));
     }
 
     .c38106a3f0c3ca76-title, 
@@ -1805,6 +1820,10 @@ body {
     ._9293f6b2fc12398a-toolbar {
         padding-right: var(--top-bar-right-margin);
     }
+    ._88ef12dca13ecf84-navBarContent,
+    ._1a9cebfbd0c9d0f6-headerBarContent {
+        padding-right: var(--top-bar-right-margin);
+    }
     ._8a7fc664acf53af6-headerBar {
         padding-right: calc(var(--top-bar-right-margin) + var(--space-sm));
     }
@@ -1834,14 +1853,23 @@ body {
     ._5e434347c823b592-base:has(._6e2b9359c6f84cfd-notice) > .c38106a3f0c3ca76-bar > .c38106a3f0c3ca76-trailing {
         top: calc(var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness));
     }
-    ._5e434347c823b592-base:has(.c38106a3f0c3ca76-winButtons) {
-        --top-bar-right-margin: calc(32px + 3 * var(--space-xs) + 6 * var(--window-control-size));
+    /* ._5e434347c823b592-base:has(.c38106a3f0c3ca76-winButtons) {
+        --top-bar-right-margin: calc(32px + 3 * var(--space-xs) + 6 * var(--window-control-size) + 1px);
     }
     ._5e434347c823b592-base:has(.c38106a3f0c3ca76-trailing > ._85643a485899904b-button) {
         --top-bar-right-margin: calc(32px * 2 + 2 * var(--space-xs));
     }
     ._5e434347c823b592-base:has(.c38106a3f0c3ca76-winButtons):has(.c38106a3f0c3ca76-trailing > ._85643a485899904b-button) {
-        --top-bar-right-margin: calc(32px * 2 + 4 * var(--space-xs) + 6 * var(--window-control-size));
+        --top-bar-right-margin: calc(32px * 2 + 5 * var(--space-xs) + 6 * var(--window-control-size) + 1px);
+    } */
+    ._5e434347c823b592-base:has(.c38106a3f0c3ca76-trailing > ._85643a485899904b-button:nth-of-type(3)) {
+        --top-bar-right-margin: calc(32px * 3 + 3 * var(--space-xs));
+    }
+    ._5e434347c823b592-base:has(.c38106a3f0c3ca76-winButtons) {
+        --top-bar-right-margin: calc(32px * 2 + 5 * var(--space-xs) + 6 * var(--window-control-size) + 1px);
+    }
+    ._5e434347c823b592-base:has(.c38106a3f0c3ca76-winButtons):has(.c38106a3f0c3ca76-trailing > ._85643a485899904b-button:nth-of-type(3)) {
+        --top-bar-right-margin: calc(32px * 3 + 6 * var(--space-xs) + 6 * var(--window-control-size) + 1px);
     }
 }
 
