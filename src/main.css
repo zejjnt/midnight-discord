@@ -318,8 +318,8 @@ body {
 }
 
 /* remove excess backgrounds */
-.wrapper_cdf8a9 /* message loading placeholders */,
-.wrapper_cdf8a9 > .wrapper_fc8177 {
+.wrapper__4e6ce /* message loading placeholders */,
+.wrapper__4e6ce > .wrapper_fc8177 {
     background: none;
 }
 .page__5e434 > .container__89463 /* server boosts page */,
