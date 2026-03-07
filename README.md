@@ -1,3 +1,8 @@
+[![Update Classes](https://github.com/zejjnt/midnight-discord/actions/workflows/classUpdate.yml/badge.svg)](https://github.com/zejjnt/midnight-discord/actions/workflows/classUpdate.yml)
+
+(This is not something intended for other people to use.
+I mean, feel free to do so but I will break it when I inevitable poke at things and I can't tell you what changes I have made since I just change stuff that I feel like changing.)
+
 <img width=800 src="https://github.com/refact0r/midnight-discord/raw/master/assets/preview.png">
 
 # midnight
